@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. history 是一个管理历史浏览记录的全局对象
+2. history.back()  返回上一个历史记录
+3. history.forward()  前进下一个历史记录
+4. history.go(index) 基于当前位置  切换几个历史  index 负值 回退  正值 前进
+-->
+<!--
+更新：
+1. history.pushState(data|null,title|null,url);      追加一条新的历史记录  没有跳转
+2. history.replaceState(data|null,title|null,url);   替换当前的历史记录 没有跳转
+3. window.onpopstate = function(){}   切换历史的时候触发该事件
+-->
+<a href="a.html">a.html</a>
+</body>
+</html>
